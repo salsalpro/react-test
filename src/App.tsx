@@ -7,10 +7,13 @@ function App() {
 
   return (
     <div className="parent w-md rounded bg-white shadow-lg text-black p-3">
+     <div className="div">
+     <div className="number">{count}</div>
+     </div>
       <div className="increase p-3 border rounded w-16 mx-auto my-3" onClick={e => {
         setCount(prev => prev + 1)
       }}>+</div>
-      <div className="number">{count}</div>
+      <div className="reset p-3 border rounded w-16 mx-auto my-3" onClick={e => setCount(0)}>reset</div>
       <div className="decrease p-3 border rounded w-16 mx-auto my-3" onClick={e => {
         setCount(prev => prev - 1)
       }}>-</div>
